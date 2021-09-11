@@ -1,0 +1,17 @@
+INDIGO_WELCOME_MESSAGE: "Digital Skills for Life Scientists"
+INDIGO_PRIMARY_COLOR: "#28a745" # cool green
+
+# Footer links are dictionaries with a "title" and "url"
+# To remove all links, write:
+# INDIGO_FOOTER_NAV_LINKS: []
+# INDIGO_FOOTER_LEGAL_LINKS: []
+INDIGO_FOOTER_NAV_LINKS:
+  - title: "About"
+    url: "https://thehackbio.com/about.html"
+  - title: "Contact"
+    url: "https://thehackbio.com/contact.html"
+INDIGO_FOOTER_LEGAL_LINKS:
+    - title: "Terms of service"
+      url: "/#"
+#    - title: "Indigo theme for Open edX"
+#      url: "https://github.com/overhangio/indigo"

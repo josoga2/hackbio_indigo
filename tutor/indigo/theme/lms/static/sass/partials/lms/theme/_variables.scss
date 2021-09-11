@@ -1,0 +1,9 @@
+$primary: {{ INDIGO_PRIMARY_COLOR }};
+
+// Theme fonts
+$font-family-title: Inter;
+$serif: Inter;
+$f-sans-serif: Inter, 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';

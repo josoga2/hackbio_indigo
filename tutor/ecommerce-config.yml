@@ -1,0 +1,30 @@
+ECOMMERCE_HOST: "ecommerce.learn.thehackbio.com"
+ECOMMERCE_PAYMENT_PROCESSORS: 
+  pypaystack:
+    cancel_checkout_path: /checkout/cancel-checkout/
+    client_id: 620447
+    transaction: sk_test_77fa2e47f25f30cc859af96c7d241f978a673383
+    error_url: /checkout/error/
+  paypal:
+    cancel_checkout_path: /checkout/cancel-checkout/
+    client_id: AcEA9mBS-PkUebW4FC7GCZF6soL5R8K8v2HIV2Vos7H_MmxmQlewCpA4S2uEGg7rYpLdF7Eg5AQOlhKN
+    client_secret: EEg2WZ48luy7fv6jMywdFlqGwRry84UJNmpQfzKN7HRYji1yBZHNL_M6tVWAfbuRS-280DCoBLTIn7AO
+    error_url: /checkout/error/
+    mode: sandbox
+    receipt_url: /checkout/receipt/
+ECOMMERCE_ENABLED_PAYMENT_PROCESSORS: ["pypaystack"]
+ECOMMERCE_ENABLED_CLIENT_SIDE_PAYMENT_PROCESSORS (default: ["pypaystack"])
+ECOMMERCE_EXTRA_PAYMENT_PROCESSOR_CLASSES (default: ['Transaction'])
+ECOMMERCE_MYSQL_PASSWORD: "{{ 8|random_string }}")
+ECOMMERCE_SECRET_KEY (default: "{{ 20|random_string }}")
+ECOMMERCE_OAUTH2_SECRET (default: "{{ 8|random_string }}")
+ECOMMERCE_API_KEY (default: "{{ 20|random_string }}")
+ECOMMERCE_DOCKER_IMAGE (default: "{{ DOCKER_REGISTRY }}overhangio/openedx-ecommerce:{{ TUTOR_VERSION }}")
+ECOMMERCE_WORKER_DOCKER_IMAGE (default: "{{ DOCKER_REGISTRY }}overhangio/openedx-ecommerce-worker:{{ TUTOR_VERSION }}")
+ECOMMERCE_MYSQL_DATABASE: "ecommerce"
+ECOMMERCE_MYSQL_USERNAME: "ecommerce"
+ECOMMERCE_CURRENCY: "USD"
+ECOMMERCE_OAUTH2_KEY: "ecommerce"
+ECOMMERCE_API_TIMEOUT: 5
+ECOMMERCE_WORKER_JWT_ISSUER: "ecommerce-worker"
+ECOMMERCE_EXTRA_PIP_REQUIREMENTS: "pypaystack"
